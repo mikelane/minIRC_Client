@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+screen -dm python client_test.py Admin
+sleep 5
+for name in Mike Joe Bob Annie Frank Rebecca Katherine Susan Aristotle Plato Socrates Acquinas Descartes Kant Liebniz Spinoza
+do
+    screen -dm python client_test.py $name
+    sleep 1
+done
+
